@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "4000:4000"
+    environment:
+      DATABASE_URL: "file:./dev.db"
+      JWT_SECRET: "change-this-to-a-long-random-string"
+      JWT_EXPIRES_IN: "7d"
+      PORT: 4000
+      CORS_ORIGIN: "http://localhost:5173"
+    volumes:
+      - backend_data:/app/prisma
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  backend_data:
