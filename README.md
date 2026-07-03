@@ -20,7 +20,21 @@
 
 ## 📷 Screenshots
 
-(сюда вставим)
+### Login
+
+![Login](./screenshots/auth.jpg)
+
+### Dashboard
+
+![Dashboard](./screenshots/dashboard.jpg)
+
+### Projects
+
+![Projects](./screenshots/projects.jpg)
+
+### Mobile
+
+![Mobile](./screenshots/mobile.jpg)
 
 ---
 
