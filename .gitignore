@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# Environment
+.env
+**/.env
+
+# Database
+backend/prisma/dev.db
+backend/prisma/*.db
+backend/prisma/*.db-journal
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
